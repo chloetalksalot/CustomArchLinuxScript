@@ -1,4 +1,22 @@
 #!/bin/bash
+cat <<EOF
+         _nnnn_
+        dGGGGMMb     ,"""""""""""""".
+       @p~qp~~qMb    | Arch Boi.    |
+       M|@||@) M|   _;..............'
+       @,----.JM| -'
+      JS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' yeet
+EOF
 echo "This will fully reset linux"
 echo "Ensure ethernet is connected"
 read -p "Are you positive?" -n 1 -r Reply
@@ -40,4 +58,5 @@ then
   mkdir /mnt/scripts
   cp *.sh /mnt/scripts
   arch-chroot /mnt /scripts/PostChroot.sh
+  reboot
 fi
