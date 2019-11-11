@@ -57,6 +57,6 @@ then
   cat /mnt/etc/fstab
   mkdir /mnt/scripts
   cp *.sh /mnt/scripts
-  arch-chroot /mnt /scripts/PostChroot.sh
+  arch-chroot /mnt /scripts/installchroot.sh
   reboot
 fi
